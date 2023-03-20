@@ -1,15 +1,18 @@
 
 * {
-  /* height & width now includes border & padding */
+
   box-sizing: border-box;
 }
 
 body {
-  
-  height: 100vh;
-  margin: 0;
+  /* width: 100hv;
+  height: 100vh; */
+  display: flex;
+  flex-direction: column;
+
   font-family: Helvetica;
   background-color:white;
+  
 }
 
 
@@ -18,8 +21,14 @@ h1{
 }
 
 img {
-    height: 200px;
-  }
+    
+    width: 100px;
+    height: auto;
+    display:grid;
+    
+  }   
+
+
   
   .container {
     display: flex;
@@ -71,9 +80,6 @@ img {
     border-radius: 120px;
     margin: 0 auto;
   }
- 
-  
- 
   
   .go-icon {
     right: 0;
@@ -124,19 +130,32 @@ img {
     outline: none;
   }
  
-  
- .grid {
-  width: 100vh;
-  height: auto;
-  display: grid;
-  grid-area: 4* 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  background-color: #025757;
-  color: #f2f2f2;
- }
+  .image-grid {
+    
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    padding: 100px;
+    
+ 
+    
+   
+    gap: 50px;
 
- span {
-  width:50px;
-  height: auto;
- }
+  }
+
+  img {
+    width: 400px;
+    align-content: center;
+    display: block;
+    
+   
+  }
+
+  a {
+    color: black;
+    line-height: 1.5;
+    font-size: 15px;
+    background-color: aliceblue;
+  }

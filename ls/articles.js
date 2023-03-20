@@ -1,7 +1,7 @@
 
 
 let news;
-const newsList = document.querySelector('.newsList')
+const newsList = document.querySelector('#newsList')
 const newsImage = document.querySelector('.newsImage')
 const $input = $('input[type="text"]')
 let search = $input.val();
@@ -25,7 +25,7 @@ function handleGetData(event) {
             const li = document.createElement('li');
             const a = document.createElement('a');
             const image = document.createElement('span'); 
-               image.innerHTML = `<img src="${article.urlToImage}">`
+            image.innerHTML = `<img src="${article.urlToImage}">`
             a.href = article.url;
             a.target = '_blank';
             a.textContent = article.title;
