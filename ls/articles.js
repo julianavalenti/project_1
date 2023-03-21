@@ -47,7 +47,7 @@ let home;
 const newsHome = document.querySelector('.news-home')
 const homeNews = document.createElement ('home')
 $.ajax({
-    url:'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=6fa06be67aa24fc9be2a6483a327ebf9'
+    url:'https://newsapi.org/v2/top-headlines?pageSize=6&country=us&category=technology&apiKey=6fa06be67aa24fc9be2a6483a327ebf9'
    }).then(
      (data) => {
       console.log(data)

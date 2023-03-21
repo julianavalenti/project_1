@@ -11,7 +11,7 @@ body {
   flex-direction: column;
 
   font-family: Helvetica;
-  background-color:white;
+  background-color: rgb(252, 252, 252)
   
 }
 
@@ -44,8 +44,8 @@ img {
     background-color: #025757;
     overflow: hidden;
     display: flex;
-    height: 200px;
-    content: url(1494.jpg);
+    height: 400px;
+    content: url(3title.jpg);
     
   }
 
@@ -93,7 +93,7 @@ img {
   .border {
     fill: none;
     stroke: #056183;
-    stroke-width: 2;
+    stroke-width: 3;
     stroke-miterlimit: 10;
   }
   
@@ -117,7 +117,7 @@ img {
     background: rgba(255,255,255,0);
     padding: 0 68px 0 68px;
     color: #158bba;
-    font-size: 1.32em;
+    font-size: 40px;
     font-weight: 400;
     letter-spacing: -0.015em;
     outline: none;
@@ -172,8 +172,9 @@ img {
     background-color: rgba(231, 235, 235, 0.297);
     box-shadow: 0.5px 0.5px 1px 1px rgba(57, 110, 110, 0.6);
     border-radius: 2%;
-    padding: 20px;
+    
     min-height: 350px;
+    margin-top: 50px;
   }
 
 
@@ -183,7 +184,10 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin: 20px;
+    margin: 400px;
+    margin-top: 200px;
+    
+
     
   }
 
@@ -201,6 +205,7 @@ img {
     
     padding: 5px;
     border: 20px;
+    
     margin: 0;
     font-family:'Darker Grotesque', sans-serif;
    font-weight: 400;
@@ -209,4 +214,8 @@ img {
 
   }
 
+  footer {
+    font-family:'Darker Grotesque', sans-serif;
+    text-align: center;
+  }
  
