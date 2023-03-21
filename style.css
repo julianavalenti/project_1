@@ -11,10 +11,21 @@ body {
   flex-direction: column;
 
   font-family: Helvetica;
-  background-color: rgb(252, 252, 252)
+  background-color: rgb(252, 252, 252);
+  
   
 }
 
+p {
+  text-align:center;
+  
+  font-family: 'Darker Grotesque', sans-serif;
+  font-size: 30px;
+  width:1000px;
+  height: auto;
+  border: 100px;
+ margin-left: 500px;
+}
 
 h1{
   color:#591C21
@@ -115,7 +126,8 @@ img {
     border-radius: 120px;
     border: none;
     background: rgba(255,255,255,0);
-    padding: 0 68px 0 68px;
+    padding: 0px 68px 0 68px;
+  
     color: #158bba;
     font-size: 40px;
     font-weight: 400;
@@ -185,7 +197,7 @@ img {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     margin: 400px;
-    margin-top: 200px;
+    margin-top: 100px;
     
 
     
