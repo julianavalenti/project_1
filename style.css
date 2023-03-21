@@ -81,27 +81,27 @@ img {
     margin: 0 auto;
   }
   
-  .go-icon {
+  /* .go-icon {
     right: 0;
     pointer-events: none;
     font-size: 1.38em;
     will-change: opacity;
     cursor: default;
     opacity: 0;
-    transform: rotate(45deg);
+    transform: rotate(45deg); */
   
-  }
+  /* } */
    
   .search-border {
     display: block;
     width: 100%;
     max-width: 360px;
-    height: 60px;
+    height: 65px;
   }
   .border {
     fill: none;
-    stroke: #470404;
-    stroke-width: 5;
+    stroke: #056183;
+    stroke-width: 2;
     stroke-miterlimit: 10;
   }
   
@@ -113,8 +113,9 @@ img {
      
   }
   #search {
-    font-family: 'Montserrat Alternates', sans-serif;
-    position: absolute;
+    font-family: 'Darker Grotesque', sans-serif;
+  
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -123,20 +124,21 @@ img {
     border: none;
     background: rgba(255,255,255,0);
     padding: 0 68px 0 68px;
-    color: #6a0606;
+    color: #158bba;
     font-size: 1.32em;
     font-weight: 400;
     letter-spacing: -0.015em;
     outline: none;
   }
  
-  .image-grid {
+  .image-grid  {
     
     max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 100px;
+    
     
  
     
@@ -145,17 +147,38 @@ img {
 
   }
 
+  
   img {
     width: 400px;
     align-content: center;
     display: block;
+    padding: 20px;
+    box-shadow:   0.5px 0.5px rgba(57, 110, 110, 0.259);
+    
     
    
   }
 
-  a {
+  ul a {
     color: black;
     line-height: 1.5;
-    font-size: 15px;
-    background-color: aliceblue;
+    font-size: 22px;
+    text-align: center;
+    
+    padding: 5px;
+    border: 20px;
+    margin: 0;
+    font-family:'Darker Grotesque', sans-serif;
+   font-weight: 400;
+    text-decoration: none;
+    
+  }
+
+  .image-grid li {
+    display: block;
+    background-color: rgba(231, 235, 235, 0.297);
+    box-shadow: 0.5px 0.5px 1px 1px rgba(57, 110, 110, 0.6);
+    border-radius: 2%;
+    padding: 20px;
+    min-height: 350px;
   }
