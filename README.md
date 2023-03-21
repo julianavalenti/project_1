@@ -8,9 +8,16 @@ JavaScript
 
 ## Technology API
 
-
-
 The News API is an uncomplicated HTTP REST API that allows you to explore and acquire real-time articles from various online sources. 
+
+The website uses the News API in two distinct manners:
+
+> ### News API *"Top headlines"* 
+Shows user the most recents news about technology in the home page
+> ### News API *"Everything"* 
+ search for articles over 80,000 news sources and blogs.
+
+ 
 
 ## User Experience
 
