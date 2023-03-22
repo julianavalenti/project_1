@@ -1,83 +1,57 @@
 
-
 let news;
 const newsList = document.querySelector('#newsList')
 const newsImage = document.querySelector('.newsImage')
 const newsHome = document.querySelector('.news-home')
 const $input = $('input[type="text"]')
-let search = $input.val();
-
 
 $('form').on('submit', handleGetData);
 
 newsList.innerHTML = ''
+
 function handleGetData(event) {
     event.preventDefault();
     
-    let search = $input.val();
+let search = $input.val();
+
+const settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://bing-news-search1.p.rapidapi.com/news/search?q=" +search+ "&freshness=Day&textFormat=Raw&safeSearch=Off",
+	"method": "GET",
+	"headers": {
+		"X-BingApis-SDK": "true",
+		"X-RapidAPI-Key": "d913990903msha7edef050068815p160ef1jsn749f27193c73",
+		"X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com"
+	}
+};
+
+
+$.ajax(settings).done(function (response) {
+	// console.log(response);
     
-    $.ajax({
-       url:'https://newsapi.org/v2/everything?q=' + search + '&apiKey=6fa06be67aa24fc9be2a6483a327ebf9'
-      }).then(
-        (data) => {
-          console.log(data)
-          $(".news-home").empty()
-          data.articles.forEach(article => {
+    $(".news-home").empty()
+    
+
+    response.value.forEach(item => {
+       
+            
             const li = document.createElement('li');
             const a = document.createElement('a');
             const image = document.createElement('span'); 
-            image.innerHTML = `<img src="${article.urlToImage}">`
-            a.href = article.url;
+            image.innerHTML = `<img src="${item.image.thumbnail.contentUrl}">`
+            a.href = item.url;
             a.target = '_blank';
-            a.textContent = article.title;
+            a.textContent = item.name;
             li.append(a);
             li.appendChild(image)
             newsHome.append(li);
     
             console.log(newsHome)
+
           });
     
-    
-    
-        }),
-        (error) => {
-         console.log('bad request', error); 
-      };    
-    
-    }
-
-let home;
-
-const homeNews = document.createElement ('home')
-$.ajax({
-    url:'https://newsapi.org/v2/top-headlines?pageSize=6&country=us&category=technology&apiKey=6fa06be67aa24fc9be2a6483a327ebf9'
-   }).then(
-     (data) => {
-      console.log(data)
-      $(".news-home").empty()
-      data.articles.forEach(article => {
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        const image = document.createElement('span'); 
-        image.innerHTML = `<img src="${article.urlToImage}">`
-        a.href = article.url;
-        a.target = '_blank';
-        a.textContent = article.title;
-        li.append(a);
-        li.appendChild(image)
-        newsHome.append(li);
-
-        console.log(newsHome)
-      });
-
-
-
-    }),
-    (error) => {
-     console.log('bad request', error); 
-  };    
-
-
-    
-
+ });
+        
+}
 
