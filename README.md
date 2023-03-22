@@ -2,30 +2,26 @@
 # Bug Busters News App
 
 ## Technologies Used: 
+
 HTML
 JavaScript 
- JavaScript, HTML, CSS...
+CSS
+
 
 ## Technology API
 
-The News API is an uncomplicated HTTP REST API that allows you to explore and acquire real-time articles from various online sources. 
-
-The website uses the News API in two distinct manners:
-
-> ### News API *"Top headlines"* 
-Shows user the most recents news about technology in the home page
-> ### News API *"Everything"* 
- search for articles over 80,000 news sources and blogs.
+Bing News API is a tool created by Microsoft that allows software developers to get news articles and other related data from many sources. 
+Get news articles relevant for a given query.
 
  
 
 ## User Experience
 
-You have the flexibility to search for articles using a variety of criteria such as keywords or phrases, date of publication, source domain name, and language. With access to over 80,000 news sources and blogs, you can easily search through millions of articles of various sizes.
+You have the flexibility to search for articles using a variety of criteria such as keywords or phrases, date of publication, source domain name, and language. The homepage features a user-friendly interface, allowing you to enter your search terms into the search box and hit just ENTER to quickly access relevant news articles.
 
 ## Documentation:
 
-https://newsapi.org/docs
+https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/how-to/search-for-news
 
 ## Future Enhancements: 
 
