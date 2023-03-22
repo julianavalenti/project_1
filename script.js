@@ -39,16 +39,34 @@ $.ajax(settings).done(function (response) {
             const li = document.createElement('li');
             const a = document.createElement('a');
             const image = document.createElement('span'); 
+            const p = document.createElement ('p')
+            p.classList.add('hidden')
             image.innerHTML = `<img src="${item.image.thumbnail.contentUrl}">`
             a.href = item.url;
             a.target = '_blank';
             a.textContent = item.name;
+            p.textContent = item.description;
+            
             li.append(a);
             li.appendChild(image)
+            li.appendChild(p)
             newsHome.append(li);
     
-            console.log(newsHome)
+            li.addEventListener('mouseover', function (){
+              p.classList.remove('hidden')
+            })
+            
+            li.addEventListener('mouseout', function (){
+              p.classList.add('hidden')
+            })
 
+            
+
+              
+
+
+
+            
           });
     
  });
@@ -83,16 +101,31 @@ $.ajax(settings).done(function (response) {
             const li = document.createElement('li');
             const a = document.createElement('a');
             const image = document.createElement('span'); 
+            const p = document.createElement ('p')
+            p.classList.add('hidden')
             image.innerHTML = `<img src="${item.image.thumbnail.contentUrl}">`
             a.href = item.url;
             a.target = '_blank';
             a.textContent = item.name;
+            p.textContent = item.description;
             li.append(a);
             li.appendChild(image)
+            li.appendChild(p)
             newsHome.append(li);
     
             console.log(newsHome)
 
+            li.addEventListener('mouseover', function (){
+              p.classList.remove('hidden')
+            })
+            
+            li.addEventListener('mouseout', function (){
+              p.classList.add('hidden')
+            })
+
           });
     
  });
+
+
+

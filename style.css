@@ -12,12 +12,17 @@ body {
 
   font-family: Helvetica;
   background-color: rgb(252, 252, 252);
+  margin-top: 0;
+  
   
   
 }
 
-p {
+h3 {
+  
+  display: flex;
   text-align:center;
+  justify-content: center;
   
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 30px;
@@ -57,6 +62,7 @@ img {
     display: flex;
     height: 400px;
     content: url(3title.jpg);
+    margin-top: 0;
     
   }
 
@@ -154,6 +160,7 @@ img {
   
   img {
     width: 400px;
+    
     align-content: center;
     display: block;
     padding: 20px;
@@ -179,13 +186,29 @@ img {
     
   }
 
+.hidden {
+
+  display:none;
+}
+
+  p {
+  background-color: #ffffff;
+  opacity: 70%;
+  position: relative;
+  
+  
+  
+    
+    
+  }
+
   .image-grid li {
     display: block;
     background-color: rgba(231, 235, 235, 0.297);
     box-shadow: 0.5px 0.5px 1px 1px rgba(57, 110, 110, 0.6);
     border-radius: 2%;
     
-    min-height: 350px;
+    
     margin-top: 50px;
   }
 
