@@ -20,16 +20,12 @@ body {
 
 h3 {
   
-  display: flex;
-  text-align:center;
-  justify-content: center;
-  
   font-family: 'Darker Grotesque', sans-serif;
   font-size: 30px;
   width:1000px;
   height: auto;
   border: 100px;
- margin-left: 500px;
+  margin-left: 500px;
 }
 
 h1{
@@ -190,8 +186,9 @@ img {
 }
 
   p {
-  background-color: #ffffff;
-  opacity: 70%;
+  background-color: #f7f4f4c9;
+  color:#0c0c0c;
+  opacity: 90%;
   position: relative;
   bottom: 410px;
   
@@ -253,3 +250,37 @@ img {
     text-align: center;
   }
  
+/* 
+  @media only screen and (max-width:700px) {
+    .topnav {
+      display: inline;
+      text-align: center;
+      content: none;
+      background-color: #dde6e6;
+      overflow: hidden;
+      height: 120px;
+      margin-top: 0;
+    }
+
+    h1 {
+
+      font-family:'Darker Grotesque', sans-serif;
+    }
+
+    h2 {
+      font-family:'Darker Grotesque', sans-serif;
+      justify-content: center;
+
+    }
+
+    h3 {
+      display: inline;
+      position: absolute;
+      font-size: 20px;
+      margin: auto;
+      
+      width: 800px;
+
+
+    }
+  } */
