@@ -5,17 +5,13 @@
 }
 
 body {
-  /* width: 100hv;
-  height: 100vh; */
+  
   display: flex;
   flex-direction: column;
 
   font-family: Helvetica;
   background-color: rgb(252, 252, 252);
-  margin-top: 0;
-  
-  
-  
+  margin-top: 0; 
 }
 
 h3 {
@@ -40,8 +36,6 @@ img {
     
   }   
 
-
-  
   .container {
     display: flex;
     flex-direction: column;
@@ -53,6 +47,7 @@ img {
   }
 
   .topnav {
+     
     background-color: #025757;
     overflow: hidden;
     display: flex;
@@ -60,30 +55,6 @@ img {
     content: url(3title.jpg);
     margin-top: 0;
     
-  }
-
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 25px 20px;
-    text-decoration: none;
-    margin: 0px;
-    font-size: 20px;
-  }
-  
-
-  .topnav a:hover {
-    background-color: #591C21;
-    color: whitesmoke;
-    padding: 20px;
-    
-  }
-  
-
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
   }
 
   .search-box {
@@ -95,8 +66,6 @@ img {
     margin: 0 auto;
   }
   
-
-   
   .search-border {
     display: block;
     width: 100%;
@@ -109,8 +78,7 @@ img {
     stroke-width: 3;
     stroke-miterlimit: 10;
   }
-  
-  
+   
   .border-searching .border {
     stroke-dasharray: 740;
     stroke-dashoffset: 459;
@@ -153,8 +121,8 @@ img {
 
   }
 
-  
-  img {
+  img .my-img {
+    width:100%; height: auto; 
     width: 400px;
     
     align-content: center;
@@ -208,7 +176,6 @@ img {
     margin-top: 50px;
   }
 
-
   .news-home  {
     
     /* max-width: 1000px; */
@@ -250,37 +217,16 @@ img {
     text-align: center;
   }
  
-/* 
-  @media only screen and (max-width:700px) {
+  /* @media only screen and (max-width:752px) {
+    .body {
+      width:100%; 
+      height: auto; 
+    }
     .topnav {
-      display: inline;
-      text-align: center;
       content: none;
-      background-color: #dde6e6;
-      overflow: hidden;
-      height: 120px;
-      margin-top: 0;
-    }
-
-    h1 {
-
-      font-family:'Darker Grotesque', sans-serif;
-    }
-
-    h2 {
-      font-family:'Darker Grotesque', sans-serif;
-      justify-content: center;
-
-    }
-
-    h3 {
-      display: inline;
-      position: absolute;
-      font-size: 20px;
-      margin: auto;
-      
-      width: 800px;
-
-
     }
   } */
+
+ 
+
+  
